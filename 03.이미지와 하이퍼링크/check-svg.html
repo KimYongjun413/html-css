@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Insert SVG</title>        
+        <!--
+            SVG 기능을 체크하는 Modernizr를 다운로드하려면 Modernizr 사이트(https://modernizr.com/)에 접속한 후 [Add your detects]를 클릭합니다.
+
+            Modernizr에서 체크할 수 있는 다양한 기능들이 나타나는데 이 중에서 [SVG]를 선택하고 [Build]를 클릭합니다.
+
+            [Build]항목 오른쪽[Download]를 클릭해 js 파일을 다운로드합니다. 다운로드한 파일 이름은 modernizr-custom.js인데 이 파일을 사용할 폴더로 옮깁니다.
+
+            다운로드한 modernizr-custom.js 파일은 <script> 태그를 이용해 웹 문서에 연결합니다.
+        -->
+        <script src="modernizr-custom.js"></script>
+    </head>
+    <body>
+        <h1>SVG 이미지 삽입하기</h1>
+        <img src="images/muffin.svg" alt="">
+        <script>
+            /*
+                여기서는 문서 안에 하나의 이미지만 있을 경우를 예로 들었지만 문서에 이미지가 많다면 'id 선택자'를 사용해 다른 이미지와 구별해 주어야 합니다.
+            */
+            if(!modernizr.svg) {
+                $("img").attr("src", "images/muffin.png");
+            }
+        </script>
+    </body>
+</html>
