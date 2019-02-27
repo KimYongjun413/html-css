@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>선형 그러데이션</title>
+        <style>
+            div {
+                width: 500px;
+                height: 300px;
+                margin: 10px;
+            }
+            .grad1{
+                background: red;/*CSS3미지원 브라우저*/
+                background: -webkit-radial-gradient(white, yellow, red);
+                background: -moz-radial-gradient(white, yellow, red);
+                background: -o-radial-gradient(white, yellow, red);
+                background: radial-gradient(white, yellow, red);/*모양을 지정하지 않아 타원으로 나타남*/
+                /*background: radial-gradient(circle, white, yellow, red);모양을 원으로 지정함*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grad1"></div>
+        <div class="grad2"></div>
+    </body>
+</html>

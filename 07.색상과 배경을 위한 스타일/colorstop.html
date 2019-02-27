@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>선형 그러데이션</title>
+        <style>
+            div {
+                width: 500px;
+                height: 300px;
+            }
+            /*시작 색상과 끝 색상을 #06f로 하고 시작 위치에서 30% 지점에 흰색을 두어 위에서 아래로 부드럽게 연결되는 그러데이션을 정의*/
+            .grad {
+                background: #06f;/*CSS3 미지원 브라우저*/
+                background-image: -webkit-linear-gradient(top, #06f, white 30%, #06f);/*시작색상,중지 점 색상과 우치, 끝색상*/
+                background-image: -moz-linear-gradient(top, #06f, white 30%, #06f);
+                background: -o-linear-gradient(top, #06f, white 30%, #06f);
+                background: linear-gradient(to bottom, #06f, white 30%, #06f);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grad"></div>
+    </body>
+</html>
