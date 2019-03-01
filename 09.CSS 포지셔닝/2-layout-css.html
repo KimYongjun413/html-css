@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>2단 레이아웃</title>
+    <style>
+        div {
+            border: 1px solid #ccc; /* 모든 영역에 테두리 표시 */
+        }
+        #container {
+            width:960px; /* 컨테이너 너비 */
+            padding:20px; /* 패딩 */			
+            margin:0 auto;  /* 화면 중앙에 배치 */
+        }
+        #header {
+            padding:20px;  /* 패딩 */
+            margin-bottom:20px;  /* 아래 요소들과의 간격(마진) */
+        }
+        #contents {
+            width: 620px;  /* 너비 */
+            padding: 20px;  /* 패딩 */
+            float: left;  /* 왼쪽으로 플로팅 */
+            margin-bottom: 20px;  /* 아래 요소와의 간격 */
+        }
+        #sidebar {
+            width: 220px;  /* 너비 */
+            padding: 20px;  /* 패딩 */
+            float: right;  /* 오른쪽으로 플로팅 */
+            margin-bottom: 20px;  /* 아래 요소와의 간격 */
+            background:#eee;
+        }
+        #footer {
+            clear:both;  /* 양쪽 플로팅 해제 */
+            padding:20px;  /* 패딩 */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+			<h1>사이트 제목</h1>
+		</div>
+		<div id="sidebar">
+			<h2>사이드 바</h2>
+            <ul>
+                <li>국회의 회의는 공개한다. 다만, 출석의원 과반수의 찬성이 있거나 의장이 국가의 안전보장을 위하여 필요하다고 인정할 때에는 공개하지 아니할 수 있다.</li>                
+            </ul>
+
+            </ul>
+		</div>
+		<div id="contents">
+			<h2>본문</h2>
+            <p>환경권의 내용과 행사에 관하여는 법률로 정한다. 헌법재판소에서 법률의 위헌결정, 탄핵의 결정, 정당해산의 결정 또는 헌법소원에 관한 인용결정을 할 때에는 재판관 6인 이상의 찬성이 있어야 한다. 국가는 건전한 소비행위를 계도하고 생산품의 품질향상을 촉구하기 위한 소비자보호운동을 법률이 정하는 바에 의하여 보장한다.</p>
+
+            <p>모든 국민은 건강하고 쾌적한 환경에서 생활할 권리를 가지며, 국가와 국민은 환경보전을 위하여 노력하여야 한다. 모든 국민은 법률이 정하는 바에 의하여 납세의 의무를 진다. 감사원은 원장을 포함한 5인 이상 11인 이하의 감사위원으로 구성한다. 제1항의 해임건의는 국회재적의원 3분의 1 이상의 발의에 의하여 국회재적의원 과반수의 찬성이 있어야 한다.</p>
+		</div>
+		<div id="footer">
+			<h2>푸터</h2>
+            <p>이 헌법시행 당시의 법령과 조약은 이 헌법에 위배되지 아니하는 한 그 효력을 지속한다.</p>
+		</div>
+    </div>
+</body>
+</html>
